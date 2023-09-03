@@ -63,6 +63,9 @@ nav{
         .carousel {
             pointer-events: none;
           }
+        #novedad{
+            pointer-events: all; 
+        }
     }
 }
 .page-footer{
