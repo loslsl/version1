@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+<body>
+    <div>
+        <nav class="pushpin-demo-nav pinned" style="top: 0px;">
+            <div class="nav-wrapper">
+              <a href="index.html" class="brand-logo mil" style="color: black;"><img src="resources/logo.png" alt="logo" class="mx"></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html" class="blt">Inicio</a></li>
+                <li><a href="galeria.html" class="blt">Productos</a></li>
+                <li><a href="contacto.html" class="blt">Contacto</a></li>
+                <li><a href="nosotros.html" class="blt">¿Quiénes somos?</a></li>
+              </ul>
+            </div>
+          </nav>
+          <br>
+          <br>
+          <!--Contenido-->
+          <div class="tras" style="width: 90%;">
+            <h1 id="imText" style="margin-left: 15px;">Contacto</h1>
+            <p style="font-size: 20px; padding: 5px;">Mobile revolution esta abierto a sugerencias y atender a preguntas, complete el siguiente formulario y pronto alguien de nuestra compañia se pondrá en contacto con usted.</p>
+          </div>
+          <div class="tras" style="width: 90%; background-color: white;">
+            <!--Tablas-->
+            <form action="">
+                <table id="tablecon" style="width: 100%;">
+                    <tr>
+                        <td>
+                            <input id="name" type="text" placeholder="Nombre" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="lastname" type="text" placeholder="Apellido">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="message" type="text" placeholder="Motivo de envio">
+                        </td>
+                    </tr>
+                </table>
+                <div style="text-align: center;"><button id="send" class="btn waves-effect cmb darken-text-2" style="height: 50px; width: 100%; padding-top: 5px;">Enviar</button></div>
+                <br>
+            </form>
+            <p style="font-size: 20px; padding: 5px;">Conoce más sobre nuestra empresa en <a href="nosotros.html">¿Quiénes somos?</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3929.64626416207!2d-84.63220902612127!3d9.96336007366648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scr!4v1693776539855!5m2!1ses-419!2scr" style="border:0; height: 450px; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+          <!--Fin-->
+
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Revolución móvil</h5>
+              <p class="grey-text text-lighten-4">Estamos haciendo de tus dispositivos algo más que pisapapeles caros...</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Sigue explorando</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="index.html">Inicio</a></li>
+                <li><a class="grey-text text-lighten-3" href="galeria.html">Productos</a></li>
+                <li><a class="grey-text text-lighten-3" href="contacto.html">Contacto</a></li>
+                <li><a class="grey-text text-lighten-3" href="nosotros.html">Sobre Nosotros</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2023 Todos los derechos reservados
+          </div>
+        </div>
+      </footer>
+      <script>
+        document.getElementById("send").addEventListener("click", function() {
+            var mensaje ="Hola, soy: " + document.getElementById("name").value +" "+ document.getElementById("lastname").value + " y me gustaria contactarlos porque/para: " + document.getElementById("message").value
+            var url = "https://wa.me/50662365029" + "?text=" + encodeURIComponent(mensaje);
+            window.open(url, "_blank");
+});
+      </script>
+        <script src="lo.js"></script>
+  </body>
+  </html>
